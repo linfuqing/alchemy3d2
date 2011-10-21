@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\Core.vcproj", "{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcproj", "{6AAA617D-A6BD-4000-A9E7-B05A4E73EF1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{529D0031-EE5C-4F3E-A07B-DEBC7B9E6BF9} = {529D0031-EE5C-4F3E-A07B-DEBC7B9E6BF9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "Math\Math.vcproj", "{2C688A6A-9FFC-4BDB-B93C-823713CE6842}"
+	ProjectSection(ProjectDependencies) = postProject
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D} = {953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graphics", "Graphics\Graphics.vcproj", "{A369D4E5-EC2B-493E-9CD8-7253114C86E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C688A6A-9FFC-4BDB-B93C-823713CE6842} = {2C688A6A-9FFC-4BDB-B93C-823713CE6842}
+		{8E3690A2-014F-4992-B36B-326DD08B5652} = {8E3690A2-014F-4992-B36B-326DD08B5652}
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D} = {953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flash", "Flash\Flash.vcproj", "{529D0031-EE5C-4F3E-A07B-DEBC7B9E6BF9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C688A6A-9FFC-4BDB-B93C-823713CE6842} = {2C688A6A-9FFC-4BDB-B93C-823713CE6842}
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D} = {953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}
+		{A369D4E5-EC2B-493E-9CD8-7253114C86E6} = {A369D4E5-EC2B-493E-9CD8-7253114C86E6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SceneManagement", "SceneManagement\SceneManagement.vcproj", "{8E3690A2-014F-4992-B36B-326DD08B5652}"
+	ProjectSection(ProjectDependencies) = postProject
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D} = {953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geometry", "Geometry\Geometry.vcproj", "{709E73B5-40F1-4928-82EA-F2BDDA012283}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}.Debug|Win32.Build.0 = Debug|Win32
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}.Release|Win32.ActiveCfg = Release|Win32
+		{953E19E0-1A0B-47F8-9EBC-CF6C5DE2000D}.Release|Win32.Build.0 = Release|Win32
+		{6AAA617D-A6BD-4000-A9E7-B05A4E73EF1B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6AAA617D-A6BD-4000-A9E7-B05A4E73EF1B}.Debug|Win32.Build.0 = Debug|Win32
+		{6AAA617D-A6BD-4000-A9E7-B05A4E73EF1B}.Release|Win32.ActiveCfg = Release|Win32
+		{6AAA617D-A6BD-4000-A9E7-B05A4E73EF1B}.Release|Win32.Build.0 = Release|Win32
+		{2C688A6A-9FFC-4BDB-B93C-823713CE6842}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C688A6A-9FFC-4BDB-B93C-823713CE6842}.Debug|Win32.Build.0 = Debug|Win32
+		{2C688A6A-9FFC-4BDB-B93C-823713CE6842}.Release|Win32.ActiveCfg = Release|Win32
+		{2C688A6A-9FFC-4BDB-B93C-823713CE6842}.Release|Win32.Build.0 = Release|Win32
+		{A369D4E5-EC2B-493E-9CD8-7253114C86E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A369D4E5-EC2B-493E-9CD8-7253114C86E6}.Debug|Win32.Build.0 = Debug|Win32
+		{A369D4E5-EC2B-493E-9CD8-7253114C86E6}.Release|Win32.ActiveCfg = Release|Win32
+		{A369D4E5-EC2B-493E-9CD8-7253114C86E6}.Release|Win32.Build.0 = Release|Win32
+		{529D0031-EE5C-4F3E-A07B-DEBC7B9E6BF9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{529D0031-EE5C-4F3E-A07B-DEBC7B9E6BF9}.Debug|Win32.Build.0 = Debug|Win32
+		{529D0031-EE5C-4F3E-A07B-DEBC7B9E6BF9}.Release|Win32.ActiveCfg = Release|Win32
+		{529D0031-EE5C-4F3E-A07B-DEBC7B9E6BF9}.Release|Win32.Build.0 = Release|Win32
+		{8E3690A2-014F-4992-B36B-326DD08B5652}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8E3690A2-014F-4992-B36B-326DD08B5652}.Debug|Win32.Build.0 = Debug|Win32
+		{8E3690A2-014F-4992-B36B-326DD08B5652}.Release|Win32.ActiveCfg = Release|Win32
+		{8E3690A2-014F-4992-B36B-326DD08B5652}.Release|Win32.Build.0 = Release|Win32
+		{709E73B5-40F1-4928-82EA-F2BDDA012283}.Debug|Win32.ActiveCfg = Debug|Win32
+		{709E73B5-40F1-4928-82EA-F2BDDA012283}.Debug|Win32.Build.0 = Debug|Win32
+		{709E73B5-40F1-4928-82EA-F2BDDA012283}.Release|Win32.ActiveCfg = Release|Win32
+		{709E73B5-40F1-4928-82EA-F2BDDA012283}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

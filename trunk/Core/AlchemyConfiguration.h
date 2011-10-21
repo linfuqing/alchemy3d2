@@ -1,0 +1,4 @@
+#ifndef ALCHEMY_CONFIGURATION_H
+#define ALCHEMY_CONFIGURATION_H
+
+#endif
