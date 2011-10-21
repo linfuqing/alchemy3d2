@@ -185,7 +185,6 @@ namespace alchemy
 		CVector<CProgramInstance*>*	m_pNoDrawInstance;
 		CVector<PROGRAM_INFO>*		m_pAssistantInstance;
 
-		UINT m_uSceneIndex;
 		CSceneManager* m_pSceneManager;
 	};
 

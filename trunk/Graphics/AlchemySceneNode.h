@@ -42,7 +42,7 @@ namespace alchemy
 
 		void Update();
 
-		virtual void Destroy();
+		//virtual void Destroy();
 
 		virtual void AddedToRenderQueue();
 

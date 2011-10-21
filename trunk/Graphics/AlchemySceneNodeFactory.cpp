@@ -77,7 +77,7 @@ void CSceneNodeFactory::Destroy()
 
 	while( CPool<CSceneNode*>::IsValuable(Iterator) )
 	{
-		(*Iterator)->Destroy();
+		//(*Iterator)->Destroy();
 
 		ALCHEMY_DEBUG_DELETE(*Iterator);
 

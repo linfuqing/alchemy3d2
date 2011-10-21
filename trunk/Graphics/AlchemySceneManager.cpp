@@ -46,14 +46,6 @@ m_FullScreenDrawer(*this)
 
 CSceneManager::~CSceneManager(void)
 {
-	CPool<CSceneObject*>::CIterator Iterator = m_SceneObjectPool.GetBeginIterator();
-	while( CPool<CSceneObject*>::IsValuable(Iterator) )
-	{
-		(*Iterator)->Destroy();
-
-		++ Iterator;
-	}
-
 	CGraphicsResourcePool::Destroy();
 
 	ALCHEMY_DEBUG_DELETE(m_pRenderQueue);
@@ -623,8 +615,6 @@ CSceneObject* CSceneManager::CreateSceneObject(CGraphicsResource::HANDLE Mesh, U
 		if( pRenderMethod && Object.SetRenderMethod(*pRenderMethod) )
 			pRenderMethod->AddRef();
 
-		Object.m_uSceneIndex = m_SceneObjectPool.Add(&Object);
-
 		return &Object;
 	}
 
@@ -750,16 +740,6 @@ void CSceneManager::Destroy()
 
 		m_pSceneRenderTarget = ALCHEMY_NULL;
 	}
-
-	CPool<CSceneObject*>::CIterator Iterator = m_SceneObjectPool.GetBeginIterator();
-	while( CPool<CSceneObject*>::IsValuable(Iterator) )
-	{
-		(*Iterator)->Destroy();
-
-		++ Iterator;
-	}
-
-	m_SceneObjectPool.Clear();
 
 	CGraphicsResourcePool::Destroy();
 
