@@ -180,14 +180,7 @@ void CSceneObject::Destroy()
 
 	m_ShadowMapDisplayEffectMap.Clear();
 
-	if(m_pSceneManager)
-	{
-		CSceneObject** ppSceneObject = m_pSceneManager->m_SceneObjectPool.Get(m_uSceneIndex);
-		if(ppSceneObject && static_cast<CSceneObject*>(this) ==  *ppSceneObject)
-			m_pSceneManager->m_SceneObjectPool.Remove(m_uSceneIndex, 1);
-
-		m_pSceneManager = ALCHEMY_NULL;
-	}
+	m_pSceneManager = ALCHEMY_NULL;
 
 	CPool<RENDERDATA*>::CIterator Iter = m_RenderDataPool.GetBeginIterator();
 	RENDERDATA* pRenderData = ALCHEMY_NULL, *pNextRenderData = ALCHEMY_NULL;

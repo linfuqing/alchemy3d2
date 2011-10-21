@@ -23,11 +23,6 @@ CSceneNode::~CSceneNode(void)
 {
 }
 
-void CSceneNode::Destroy()
-{
-
-}
-
 bool CSceneNode::IsDynamic()const
 {
 	return m_bIsDynamic;
