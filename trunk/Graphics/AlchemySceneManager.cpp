@@ -25,6 +25,7 @@ m_BackgroundColor(0),
 m_SceneRenderTargetInfo(RenderSystem),
 m_pSceneRenderTarget(ALCHEMY_NULL),
 m_uSceneRenderTargetSurface(0),
+m_bIsSceneDirty(false),
 m_FullScreenDrawer(*this)
 {
 	sm_pInstance = this;
@@ -717,14 +718,26 @@ CLight* CSceneManager::AddLight(CGraphicsResource::HANDLE Light, COldLightEffect
 
 bool CSceneManager::AddChild(CSceneNode& Child)
 {
-	Child.AddedToRenderQueue();
+	if( m_Scene.AddChild(Child) )
+	{
+		m_bIsSceneDirty = true;
 
-	return m_Scene.AddChild(Child);
+		return true;
+	}
+
+	return false;
 }
 
 bool CSceneManager::RemoveChild(CSceneNode& Child)
 {
-	return m_Scene.RemoveChild(Child);
+	if( m_Scene.RemoveChild(Child) )
+	{
+		m_bIsSceneDirty = true;
+
+		return true;
+	}
+
+	return false;
 }
 
 void CSceneManager::Activate()
@@ -773,6 +786,13 @@ void CSceneManager::Update(FLOAT fElapseTime)
 
 void CSceneManager::Render()
 {
+	if(m_bIsSceneDirty)
+	{
+		ResetScene();
+
+		m_bIsSceneDirty = false;
+	}
+
 	static bool s_bIsRendering = false;
 
 	if(s_bIsRendering)

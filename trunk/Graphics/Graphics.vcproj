@@ -361,6 +361,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\AlchemyPointLightEffect.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\AlchemyPositionEffect.cpp"
 				>
 			</File>
@@ -732,6 +736,10 @@
 			</File>
 			<File
 				RelativePath=".\AlchemyPixelFogBlendMethod.h"
+				>
+			</File>
+			<File
+				RelativePath=".\AlchemyPointLightEffect.h"
 				>
 			</File>
 			<File
