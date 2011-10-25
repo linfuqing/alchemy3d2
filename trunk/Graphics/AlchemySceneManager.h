@@ -156,6 +156,8 @@ namespace alchemy
 		LPTEXTURE m_pSceneRenderTarget;
 		UINT m_uSceneRenderTargetSurface;
 
+		bool m_bIsSceneDirty;
+
 		CFullScreenDrawer m_FullScreenDrawer;
 	};
 
