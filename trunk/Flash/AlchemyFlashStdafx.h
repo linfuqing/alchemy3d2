@@ -1,8 +1,8 @@
 #pragma once
 
-//#include<AS3.h>
+#include<AS3.h>
 
-//#define AS3_H
+#define AS3_H
 
 #ifdef AS3_H
 
