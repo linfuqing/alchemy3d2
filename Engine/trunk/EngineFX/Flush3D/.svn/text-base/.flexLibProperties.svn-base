@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="alchemy.data.CDataAccessor"/>
+    <classEntry path="alchemy.core.CObject"/>
+    <classEntry path="alchemy.manager.CGraphicsManager"/>
+    <classEntry path="alchemy.manager.CSceneNodeFactory"/>
+    <classEntry path="alchemy.event.CPoolEvent"/>
+    <classEntry path="alchemy.external.DAELoader"/>
+    <classEntry path="alchemy.external.AbstractLoader"/>
+    <classEntry path="alchemy.data.CSceneNodeData"/>
+    <classEntry path="alchemy.external.AbstractTexturesLoader"/>
+    <classEntry path="alchemy.event.CLoaderEvent"/>
+    <classEntry path="alchemy.event.CTextureLoaderEvent"/>
+    <classEntry path="alchemy.external.DefTextureLoader"/>
+    <classEntry path="alchemy.scene.CBone"/>
+    <classEntry path="alchemy.data.animation.CAnimationTrackData"/>
+    <classEntry path="alchemy.data.animation.CBoneData"/>
+    <classEntry path="alchemy.animation.CSkinInfo"/>
+    <classEntry path="alchemy.animation.CAnimationController"/>
+    <classEntry path="alchemy.animation.CAnimationSet"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
